@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Computer Software Request Forms</title>
+    <!-- <link rel="stylesheet" href="materialize/css/materialize.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row col s6">
+
+            <h1>New Computer Checklist</h1>
+        </div>
+        <div class="col s6">
+            Please bear in mind blanket selections will take longer to install and will also fill up your SSD
+        </div>
+
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <h4>All new computers come installed with these programs:</h3>
+                <div class="col s4">
+                    <li>MS Office</li>
+                    <li>Malwarebytes</li>
+                    <li>Eset</li>
+                    <li>BlueBeam Latest Version</li>
+                </div>
+        </div>
+        <div class="row col s10">
+            <form id="initForm">
+                <div class="input-field col s5 example">
+                    <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Civil</option>
+                        <option value="2">Structural</option>
+                        <option value="3">Admin</option>
+                    </select>
+                    <label>Select Work Area:</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Civil Form -->
+
+    <div id="civilian" style="" class=" container">
+        <div class="row col s10">
+            <h6>Civil Form </h6>
+            <form id="civilForm">
+                <div class="row">
+                    <div class="input-field col s5">
+                        <input placeholder="First Name" id="firstName" type="text" class="validate" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input placeholder="Last Name" id="lastName" type="text" class="validate" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                </div>
+                <p>
+                    <label>
+                        <input id="12D" type="checkbox" />
+                        <span>12D</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="xp" type="checkbox" />
+                        <span>XPStorm</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="autoTurn" type="checkbox" />
+                        <span>AutoTurn</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="hecras" type="checkbox" />
+                        <span>HEC RAS</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="music" type="checkbox" />
+                        <span>Music</span>
+                    </label>
+                </p>
+
+                <div class="input-field col s4">
+                    <select multiple id="autoCadSelector">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="2016">2016</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                    </select>
+                    <label>Select AutoCad Years</label>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <textarea id="otherCivil" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Please enter other programs:</label>
+                    </div>
+                </div>
+
+                <div class="row col s10">
+                    <div class="col s1">
+                        <button type="button" class="btn blue darken-3">Submit</button>
+                    </div>
+                    <div class="col s1">
+                        <button type="reset" class="btn red darken-3">reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Structural Form -->
+    <div id="structural" style="" class="container">
+        <div class="row col s10">
+            <h6>Structural Form </h6>
+            <form id="structForm">
+                <div class="row">
+                    <div class="input-field col s5">
+                        <input placeholder="First Name" id="firstName" type="text" class="validate" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input placeholder="Last Name" id="lastName" type="text" class="validate" required>
+                        <label for="firstName">Last Name</label>
+                    </div>
+                </div>
+                <p>
+                    <label>
+                        <input id="spaceGas" type="checkbox" />
+                        <span>Space Gass</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="rapt" type="checkbox" />
+                        <span>Rapt</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="hyne" type="checkbox" />
+                        <span>Hyne</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="strand" type="checkbox" />
+                        <span>Strand</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="inducta" type="checkbox" />
+                        <span>Inducta</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="limCon" type="checkbox" />
+                        <span>Lim Con</span>
+                    </label>
+                </p>
+
+
+                <div class="input-field col s4">
+                    <select multiple id="revitSelector">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                    </select>
+                    <label>Select Building Suite Years</label>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <textarea id="otherStructural" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Please enter other programs:</label>
+                    </div>
+                </div>
+
+                <div class="row col s10">
+                    <div class="col s1">
+                        <button type="button" class="btn blue darken-3">Submit</button>
+                    </div>
+                    <div class="col s1">
+                        <button type="reset" class="btn red darken-3">reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Admin Form -->
+    <div id="admin" class="container">
+        <div class="row col s10">
+            <h6>Admin Form </h6>
+            <form id="adminForm">
+                <div class="row">
+                    <div class="input-field col s5">
+                        <input placeholder="First Name" id="firstName" type="text" class="validate" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input placeholder="Last Name" id="lastName" type="text" class="validate" required>
+                        <label for="firstName">Last Name</label>
+                    </div>
+                </div>
+                <p>
+                    <label>
+                        <input id="ironbark" type="checkbox" />
+                        <span>IronBark</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="dyno" type="checkbox" />
+                        <span>Dyno Lable Printer</span>
+                    </label>
+                </p>
+
+
+                <div class="row">
+                    <div class="input-field col s4">
+                        <textarea id="otherAdmin" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Please enter other programs:</label>
+                    </div>
+                </div>
+                <div class="row col s10">
+                    <div class="col s1">
+                        <button type="button" class="btn blue darken-3">Submit</button>
+                    </div>
+                    <div class="col s1">
+                        <button type="reset" class="btn red darken-3">reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script type="text/javascript">
+
+    //Horseshit! You have to initailize each one of the select options. 
+    //Below initialises ALL drop downs.
+    //WorkChoices
+    var elem = document.querySelector('select');
+    var instance = M.FormSelect.init(elem);
+
+    //AutoCad Year Choices
+    var autoCadSelector = document.getElementById('autoCadSelector');
+    var instanceOfAutoCad = M.FormSelect.init(autoCadSelector);
+
+    //Revit Year Choices
+    var revitSelector = document.getElementById('revitSelector');
+    var instanceOfrevit = M.FormSelect.init(revitSelector);
+
+    //Text Area for Admin
+    var textAreaAdmin = document.getElementById('otherAdmin');
+    var initializeTextAreaAdmin = M.textareaAutoResize.init(textAreaAdmin);
+
+    //Text Area Struct
+    var textAreaStruct = document.getElementById('otherStructural');
+    var initializeTextAreaStruct = M.textareaAutoResize.init(textAreaStruct);
+   
+    //Text Area Civil 
+    var textAreaCivil = document.getElementById('otherCivil');
+    var initializeTextAreaCivil = M.textareaAutoResize.init(textAreaCivil);
+
+
+</script>
+
+
+</html>
