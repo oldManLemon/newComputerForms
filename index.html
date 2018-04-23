@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
+   
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         <div class="row col s10">
             <form id="initForm">
                 <div class="input-field col s5 example">
-                    <select>
+                    <select id="workArea">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">Civil</option>
                         <option value="2">Structural</option>
@@ -53,7 +53,7 @@
 
     <!-- Civil Form -->
 
-    <div id="civilian" style="" class=" container">
+    <div id="civilian" style="display: none" class=" container">
         <div class="row col s10">
             <h6>Civil Form </h6>
             <form id="civilForm">
@@ -127,7 +127,7 @@
     </div>
 
     <!-- Structural Form -->
-    <div id="structural" style="" class="container">
+    <div id="structural" style="display: none" class="container">
         <div class="row col s10">
             <h6>Structural Form </h6>
             <form id="structForm">
@@ -211,7 +211,7 @@
 
 
     <!-- Admin Form -->
-    <div id="admin" class="container">
+    <div id="admin" style="display: none" class="container">
         <div class="row col s10">
             <h6>Admin Form </h6>
             <form id="adminForm">
@@ -261,36 +261,9 @@
 
 
 </body>
-<script type="text/javascript">
+<script type="text/javascript" src="init.js"></script>
+<script type="text/javascript" src="selection.js"></script>
 
-    //Horseshit! You have to initailize each one of the select options. 
-    //Below initialises ALL drop downs.
-    //WorkChoices
-    var elem = document.querySelector('select');
-    var instance = M.FormSelect.init(elem);
-
-    //AutoCad Year Choices
-    var autoCadSelector = document.getElementById('autoCadSelector');
-    var instanceOfAutoCad = M.FormSelect.init(autoCadSelector);
-
-    //Revit Year Choices
-    var revitSelector = document.getElementById('revitSelector');
-    var instanceOfrevit = M.FormSelect.init(revitSelector);
-
-    //Text Area for Admin
-    var textAreaAdmin = document.getElementById('otherAdmin');
-    var initializeTextAreaAdmin = M.textareaAutoResize.init(textAreaAdmin);
-
-    //Text Area Struct
-    var textAreaStruct = document.getElementById('otherStructural');
-    var initializeTextAreaStruct = M.textareaAutoResize.init(textAreaStruct);
-   
-    //Text Area Civil 
-    var textAreaCivil = document.getElementById('otherCivil');
-    var initializeTextAreaCivil = M.textareaAutoResize.init(textAreaCivil);
-
-
-</script>
 
 
 </html>

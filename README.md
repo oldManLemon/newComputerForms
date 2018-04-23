@@ -1,6 +1,6 @@
 # newComputers
 
-A web form for new computers
+A web form for new computers, it is tailored to my work. Feel free to take what you need or even comment on my medicore code. I welcome suggestions and feedback. 
 
 ## Style
 
