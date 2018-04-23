@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-   
+
 </head>
 
 <body>
@@ -56,50 +56,50 @@
     <div id="civilian" style="display: none" class=" container">
         <div class="row col s10">
             <h6>Civil Form </h6>
-            <form id="civilForm">
+            <form id="civilForm" method="POST" action="form.php" enctype="multipart/form-data">
                 <div class="row">
                     <div class="input-field col s5">
-                        <input placeholder="First Name" id="firstName" type="text" class="validate" required>
+                        <input placeholder="First Name" name="firstName" id="firstName" type="text" class="validate" required>
                         <label for="firstName">First Name</label>
                     </div>
                     <div class="input-field col s5">
-                        <input placeholder="Last Name" id="lastName" type="text" class="validate" required>
+                        <input placeholder="Last Name" name="lastName" id="lastName" type="text" class="validate" required>
                         <label for="firstName">First Name</label>
                     </div>
                 </div>
                 <p>
                     <label>
-                        <input id="12D" type="checkbox" />
+                        <input value="12D" id="12D" name="programsRequested[]" type="checkbox" />
                         <span>12D</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="xp" type="checkbox" />
+                        <input value="XPStorm" id="xp" name="programsRequested[]" type="checkbox" />
                         <span>XPStorm</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="autoTurn" type="checkbox" />
+                        <input value="autoTurn" id="autoTurn" name="programsRequested[]" type="checkbox" />
                         <span>AutoTurn</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="hecras" type="checkbox" />
+                        <input value="hecras" id="hecras" name="programsRequested[]" type="checkbox" />
                         <span>HEC RAS</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="music" type="checkbox" />
+                        <input value="music" id="music" name="programsRequested[]" type="checkbox" />
                         <span>Music</span>
                     </label>
                 </p>
 
                 <div class="input-field col s4">
-                    <select multiple id="autoCadSelector">
+                    <select multiple name="autoCadSelector[]" id="autoCadSelector">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="2016">2016</option>
                         <option value="2018">2018</option>
@@ -109,14 +109,14 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s4">
-                        <textarea id="otherCivil" class="materialize-textarea"></textarea>
+                        <textarea name="other" id="otherCivil" class="materialize-textarea"></textarea>
                         <label for="textarea1">Please enter other programs:</label>
                     </div>
                 </div>
 
                 <div class="row col s10">
                     <div class="col s1">
-                        <button type="button" class="btn blue darken-3">Submit</button>
+                        <button type="submit" name="submitCivil" class="btn blue darken-3">Submit</button>
                     </div>
                     <div class="col s1">
                         <button type="reset" class="btn red darken-3">reset</button>
@@ -130,57 +130,57 @@
     <div id="structural" style="display: none" class="container">
         <div class="row col s10">
             <h6>Structural Form </h6>
-            <form id="structForm">
+            <form id="structForm"  method="POST" action="form.php" enctype="multipart/form-data" >
                 <div class="row">
                     <div class="input-field col s5">
-                        <input placeholder="First Name" id="firstName" type="text" class="validate" required>
+                        <input placeholder="First Name" name="firstName" id="firstName" type="text" class="validate" required>
                         <label for="firstName">First Name</label>
                     </div>
                     <div class="input-field col s5">
-                        <input placeholder="Last Name" id="lastName" type="text" class="validate" required>
+                        <input placeholder="Last Name" name="lastName" id="lastName" type="text" class="validate" required>
                         <label for="firstName">Last Name</label>
                     </div>
                 </div>
                 <p>
                     <label>
-                        <input id="spaceGas" type="checkbox" />
+                        <input value="SpaceGass" id="spaceGas" name="programsRequested[]" type="checkbox" />
                         <span>Space Gass</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="rapt" type="checkbox" />
+                        <input value="Rapt" id="rapt" name="programsRequested[]" type="checkbox" />
                         <span>Rapt</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="hyne" type="checkbox" />
+                        <input value="Hyne" id="hyne" name="programsRequested[]" type="checkbox" />
                         <span>Hyne</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="strand" type="checkbox" />
+                        <input value="Strand7" id="strand" name="programsRequested[]" type="checkbox" />
                         <span>Strand</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="inducta" type="checkbox" />
+                        <input value="Inducta" id="inducta" name="programsRequested[]" type="checkbox" />
                         <span>Inducta</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="limCon" type="checkbox" />
+                        <input value="LimCon" id="limCon" name="programsRequested[]" type="checkbox" />
                         <span>Lim Con</span>
                     </label>
                 </p>
 
 
                 <div class="input-field col s4">
-                    <select multiple id="revitSelector">
+                    <select multiple name="autoCadSelector[]" id="revitSelector">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="2016">2016</option>
                         <option value="2017">2017</option>
@@ -191,14 +191,14 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s4">
-                        <textarea id="otherStructural" class="materialize-textarea"></textarea>
+                        <textarea name="other" id="otherStructural" class="materialize-textarea"></textarea>
                         <label for="textarea1">Please enter other programs:</label>
                     </div>
                 </div>
 
                 <div class="row col s10">
                     <div class="col s1">
-                        <button type="button" class="btn blue darken-3">Submit</button>
+                        <button type="submit" name="submitStructural" class="btn blue darken-3">Submit</button>
                     </div>
                     <div class="col s1">
                         <button type="reset" class="btn red darken-3">reset</button>
@@ -214,26 +214,26 @@
     <div id="admin" style="display: none" class="container">
         <div class="row col s10">
             <h6>Admin Form </h6>
-            <form id="adminForm">
+            <form id="adminForm"  method="POST" action="form.php" enctype="multipart/form-data" >
                 <div class="row">
                     <div class="input-field col s5">
-                        <input placeholder="First Name" id="firstName" type="text" class="validate" required>
+                        <input placeholder="First Name" name="firstName" id="firstName" type="text" class="validate" required>
                         <label for="firstName">First Name</label>
                     </div>
                     <div class="input-field col s5">
-                        <input placeholder="Last Name" id="lastName" type="text" class="validate" required>
+                        <input placeholder="Last Name" name="lastName" id="lastName" type="text" class="validate" required>
                         <label for="firstName">Last Name</label>
                     </div>
                 </div>
                 <p>
                     <label>
-                        <input id="ironbark" type="checkbox" />
+                        <input value="IronBark" id="ironbark" name="programsRequested[]" type="checkbox" />
                         <span>IronBark</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="dyno" type="checkbox" />
+                        <input name="Dyno" id="dyno" name="programsRequested[]" type="checkbox" />
                         <span>Dyno Lable Printer</span>
                     </label>
                 </p>
@@ -241,13 +241,13 @@
 
                 <div class="row">
                     <div class="input-field col s4">
-                        <textarea id="otherAdmin" class="materialize-textarea"></textarea>
+                        <textarea name="other" id="otherAdmin" class="materialize-textarea"></textarea>
                         <label for="textarea1">Please enter other programs:</label>
                     </div>
                 </div>
                 <div class="row col s10">
                     <div class="col s1">
-                        <button type="button" class="btn blue darken-3">Submit</button>
+                        <button type="submit" name="submitAdmin" class="btn blue darken-3">Submit</button>
                     </div>
                     <div class="col s1">
                         <button type="reset" class="btn red darken-3">reset</button>

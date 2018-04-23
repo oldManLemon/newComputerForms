@@ -1,4 +1,6 @@
 var results;
+
+//Initial Selection Area
 var workArea = document.getElementById('workArea');
 var workAreaEvent = workArea.addEventListener("change", getWorkArea);
 
